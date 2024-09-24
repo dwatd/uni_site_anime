@@ -7,3 +7,8 @@ document.addEventListener("DOMContentLoaded", function () {
     })
     .catch((error) => console.log("Error loading header:", error));
 });
+
+// login modal
+document.getElementById("login-btn").addEventListener("click", function () {
+  // open a login modal
+});
