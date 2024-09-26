@@ -39,6 +39,46 @@
         <div class="login-button">
           <button id="login-btn">Login</button>
         </div>
+
+        <div id="login-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form>
+              <input
+                type="email"
+                id="email"
+                placeholder="Your email"
+                required
+              />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+
+              <div class="custom-control">
+                <div class="left">
+                  <input type="checkbox" class="custom-input" id="remember" />
+                  <label class="custom-label" for="remember">Remember me</label>
+                </div>
+                <div class="right">
+                  <a href="">Forgot password?</a>
+                </div>
+              </div>
+
+              <button type="submit">Login</button>
+
+              <div class="modal-footer">
+                <p class="modal-footer-text">
+                  Don't have an account?
+                  <a href="" class="register-tab-link">Register </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
       </nav>
     </header>
   </body>
