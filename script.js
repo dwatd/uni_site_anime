@@ -14,17 +14,14 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
 
-      // Now that the header is loaded, set up the modal logic
-      const modal = document.getElementById("login-modal"); // Match ID here
+      const modal = document.getElementById("login-modal");
       const loginBtn = document.getElementById("login-btn");
       const closeBtn = document.getElementsByClassName("close")[0];
 
-      // Listen for open click
       loginBtn.onclick = function () {
         modal.style.display = "block";
       };
 
-      // Listen for close click
       closeBtn.onclick = function () {
         modal.style.display = "none";
       };
