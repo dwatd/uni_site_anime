@@ -36,6 +36,7 @@
           <li>Japanese</li>
         </ul>
 
+        <!-- login modal -->
         <div class="login-button">
           <button id="login-btn">Login</button>
         </div>
@@ -47,21 +48,27 @@
             <form>
               <input
                 type="email"
-                id="email"
+                id="login-email"
                 placeholder="Your email"
                 required
               />
               <input
                 type="password"
-                id="password"
+                id="login-password"
                 placeholder="Password"
                 required
               />
 
               <div class="custom-control">
                 <div class="left">
-                  <input type="checkbox" class="custom-input" id="remember" />
-                  <label class="custom-label" for="remember">Remember me</label>
+                  <input
+                    type="checkbox"
+                    class="custom-input"
+                    id="login-remember"
+                  />
+                  <label class="custom-label" for="login-remember"
+                    >Remember me</label
+                  >
                 </div>
                 <div class="right">
                   <a href="">Forgot password?</a>
@@ -73,7 +80,54 @@
               <div class="modal-footer">
                 <p class="modal-footer-text">
                   Don't have an account?
-                  <a href="" class="register-tab-link">Register </a>
+                  <a href="" id="register-tab-link">Register </a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- register modal -->
+        <div id="register-modal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Register</h2>
+            <form>
+              <input
+                type="email"
+                id="register-email"
+                placeholder="Your email"
+                required
+              />
+              <input
+                type="password"
+                id="register-password"
+                placeholder="Password"
+                required
+              />
+
+              <div class="custom-control">
+                <div class="left">
+                  <input
+                    type="checkbox"
+                    class="custom-input"
+                    id="register-remember"
+                  />
+                  <label class="custom-label" for="register-remember"
+                    >Remember me</label
+                  >
+                </div>
+                <div class="right">
+                  <a href="">Forgot password?</a>
+                </div>
+              </div>
+
+              <button type="submit">Register</button>
+
+              <div class="modal-footer">
+                <p class="modal-footer-text">
+                  Already have an account?
+                  <a href="" class="login-tab-link">Login </a>
                 </p>
               </div>
             </form>

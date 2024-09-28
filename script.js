@@ -4,32 +4,46 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
-    })
-    .catch((error) => console.log("Error loading header:", error));
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  fetch("header.html")
-    .then((response) => response.text())
-    .then((data) => {
-      document.getElementById("header-placeholder").innerHTML = data;
-
-      const modal = document.getElementById("login-modal");
+      const loginModal = document.getElementById("login-modal");
       const loginBtn = document.getElementById("login-btn");
-      const closeBtn = document.getElementsByClassName("close")[0];
+      const closeLoginBtn = loginModal.querySelector(".close");
+
+      const registerModal = document.getElementById("register-modal");
+      const registerBtn = document.getElementById("register-tab-link");
+      const closeRegisterBtn = registerModal.querySelector(".close");
+
+      const returnLogin = document.querySelector(".login-tab-link");
 
       loginBtn.onclick = function () {
-        modal.style.display = "block";
+        loginModal.style.display = "block";
       };
 
-      closeBtn.onclick = function () {
-        modal.style.display = "none";
+      closeLoginBtn.onclick = function () {
+        loginModal.style.display = "none";
       };
 
-      // Close the modal if clicked outside the modal content
+      registerBtn.onclick = function (event) {
+        event.preventDefault();
+        loginModal.style.display = "none";
+        registerModal.style.display = "block";
+      };
+
+      closeRegisterBtn.onclick = function () {
+        registerModal.style.display = "none";
+      };
+
+      returnLogin.onclick = function (event) {
+        event.preventDefault();
+        registerModal.style.display = "none";
+        loginModal.style.display = "block";
+      };
+
       window.onclick = function (event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
+        if (event.target == loginModal) {
+          loginModal.style.display = "none";
+        } else if (event.target == registerModal) {
+          registerModal.style.display = "none";
         }
       };
     })
