@@ -113,17 +113,17 @@ nav ul li {
 
 .modal-login-icon {
   position: absolute;
-  left: 17.6cm;
-  top: 9.1cm;
+  left: 500px;
+  top: 7.4cm;
 }
 
-.login-totoro-img {
-  width: 500px;
+.modal-login-icon img {
+  width: 190px;
   height: auto;
 }
 
 .login-content {
-  width: 380px;
+  width: 300px;
   display: block;
   margin-left: auto;
 }
@@ -144,7 +144,7 @@ nav ul li {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 33%;
+  width: 35%;
   border-radius: 10px;
   text-align: center;
 }
