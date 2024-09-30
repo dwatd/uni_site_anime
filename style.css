@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial;
   background-color: #fffcf7;
 }
 
@@ -111,6 +111,23 @@ nav ul li {
   background-color: #f0f0f0;
 }
 
+.modal-login-icon {
+  position: absolute;
+  left: 17.6cm;
+  top: 9.1cm;
+}
+
+.login-totoro-img {
+  width: 500px;
+  height: auto;
+}
+
+.login-content {
+  width: 380px;
+  display: block;
+  margin-left: auto;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -127,7 +144,7 @@ nav ul li {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 30%;
+  width: 33%;
   border-radius: 10px;
   text-align: center;
 }
@@ -176,12 +193,15 @@ nav ul li {
   margin-top: 5px;
   margin-bottom: 15px;
 }
+
 input[type="checkbox"] {
   margin: 0px;
 }
+
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
@@ -197,6 +217,7 @@ input[type="checkbox"] {
   font-size: 16px;
   font-weight: 400;
 }
+
 li {
   list-style-type: none;
   display: inline-block;
