@@ -1,0 +1,37 @@
+#header-placeholder {
+  margin-bottom: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures even column widths */
+}
+
+th {
+  text-align: center;
+  padding: 20px;
+  vertical-align: top;
+}
+
+.anime-img {
+  width: 150px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.anime-img:hover {
+  transform: scale(1.1);
+}
+
+h5 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+}
+
+th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
