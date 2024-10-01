@@ -70,7 +70,6 @@ nav {
 .search-bar button img {
   width: 25px;
   height: 25px;
-  filter: invert(15%) sepia(45%) saturate(400%) hue-rotate(10deg);
 }
 
 .search-bar button:hoover {
