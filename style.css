@@ -10,11 +10,13 @@ body {
 }
 
 header {
-  background-color: #708c69;
+  background-color: transparent;
   padding: 0px 20px;
   height: 80px;
-  /*position: fixed; */
   width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 nav {
@@ -226,25 +228,43 @@ li {
 }
 
 .idea {
-  background-size: cover;
+  background-image: url("images/background_cat.jpg");
+  background-size: 100%;
   background-position: center;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #708c69;
+  color: #000000;
+  position: relative;
+}
+
+.idea::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: inherit;
+  filter: blur(5px);
+  /*z-index: -1;*/
 }
 
 .idea-text h1 {
   font-size: 65px;
   font-weight: bold;
   padding-bottom: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .idea-text p {
   font-size: 33px;
   margin-top: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 .background {

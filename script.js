@@ -5,6 +5,15 @@ document.addEventListener("DOMContentLoaded", function () {
     .then((data) => {
       document.getElementById("header-placeholder").innerHTML = data;
 
+      // changing header color
+      const currentPage = window.location.pathname;
+      if (currentPage === "/" || currentPage.includes("index.html")) {
+        document.querySelector("header").style.backgroundColor = "transparent";
+      } else {
+        document.querySelector("header").style.backgroundColor = "#708c69";
+      }
+
+      // login and registration modals
       const loginModal = document.getElementById("login-modal");
       const loginBtn = document.getElementById("login-btn");
       const closeLoginBtn = loginModal.querySelector(".close");
