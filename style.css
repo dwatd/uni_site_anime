@@ -65,8 +65,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 50px;
-  max-height: 50px;
 }
 
 .search-bar button img {
@@ -74,7 +72,7 @@ nav {
   height: 25px;
 }
 
-.search-bar button:hoover {
+.search-bar button:hover {
   background-color: #f0f0f0;
 }
 
@@ -123,7 +121,8 @@ nav ul li {
   height: auto;
 }
 
-.login-content {
+.login-content,
+.register-content {
   width: 300px;
   display: block;
   margin-left: auto;
@@ -195,16 +194,24 @@ nav ul li {
   margin-bottom: 15px;
 }
 
+.custom-control-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 input[type="checkbox"] {
   margin: 0px;
 }
 
-.left {
-  float: left;
-}
-
+.left,
 .right {
-  float: right;
+  display: flex;
+  align-items: center;
+}
+.left label {
+  margin-left: 5px;
 }
 
 .modal-footer {
@@ -249,7 +256,6 @@ li {
   bottom: 0;
   background: inherit;
   filter: blur(5px);
-  /*z-index: -1;*/
 }
 
 .idea-text h1 {

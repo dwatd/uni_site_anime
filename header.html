@@ -63,18 +63,20 @@
               />
 
               <div class="custom-control">
-                <div class="left">
-                  <input
-                    type="checkbox"
-                    class="custom-input"
-                    id="login-remember"
-                  />
-                  <label class="custom-label" for="login-remember"
-                    >Remember me</label
-                  >
-                </div>
-                <div class="right">
-                  <a href="">Forgot password?</a>
+                <div class="custom-control-inner">
+                  <div class="left">
+                    <input
+                      type="checkbox"
+                      class="custom-input"
+                      id="login-remember"
+                    />
+                    <label class="custom-label" for="login-remember"
+                      >Remember me</label
+                    >
+                  </div>
+                  <div class="right">
+                    <a href="">Forgot password?</a>
+                  </div>
                 </div>
               </div>
 
@@ -94,8 +96,11 @@
         <div id="register-modal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h2>Register</h2>
-            <form>
+            <div class="modal-login-icon">
+              <img src="images/modal-totoro-photo.png" alt="modal-totoro-img" />
+            </div>
+            <form class="register-content">
+              <h2>Register</h2>
               <input
                 type="email"
                 id="register-email"
@@ -108,23 +113,6 @@
                 placeholder="Password"
                 required
               />
-
-              <div class="custom-control">
-                <div class="left">
-                  <input
-                    type="checkbox"
-                    class="custom-input"
-                    id="register-remember"
-                  />
-                  <label class="custom-label" for="register-remember"
-                    >Remember me</label
-                  >
-                </div>
-                <div class="right">
-                  <a href="">Forgot password?</a>
-                </div>
-              </div>
-
               <button type="submit">Register</button>
 
               <div class="modal-footer">
