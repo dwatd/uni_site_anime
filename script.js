@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (
         currentPage === " " ||
         currentPage.includes("index.html") ||
-        currentPage.includes(" ")
+        currentPage.includes("/uni_site_jap/")
       ) {
         document.querySelector("header").style.backgroundColor = "transparent";
       } else {
