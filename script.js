@@ -8,9 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // changing header color
       const currentPage = window.location.pathname;
       if (
-        currentPage === " " ||
+        currentPage === "/" ||
         currentPage.includes("index.html") ||
-        currentPage.includes("/uni_site_jap/")
+        currentPage.includes(" ")
       ) {
         document.querySelector("header").style.backgroundColor = "transparent";
       } else {
