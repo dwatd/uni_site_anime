@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // changing header color
       const currentPage = window.location.pathname;
-      if (currentPage === "/" || currentPage.includes("index.html")) {
+      if (currentPage === " " || currentPage.includes("index.html")) {
         document.querySelector("header").style.backgroundColor = "transparent";
       } else {
         document.querySelector("header").style.backgroundColor = "#708c69";
