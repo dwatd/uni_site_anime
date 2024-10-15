@@ -3,60 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anime</title>
+    <title>Movies</title>
+    <link rel="stylesheet" href="anime.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
-    <link rel="stylesheet" href="anime.css" />
   </head>
   <body>
     <div id="header-placeholder"></div>
-    <section id="anime-table">
-      <table>
-        <tr>
-          <th>
-            <img
-              src="images/anime/one piece.jpg"
-              alt="one-piece"
-              class="anime-img"
-            />
-            <h5>One Piece</h5>
-          </th>
-          <th>
-            <img
-              src="images/anime/jujutsu kaisen.png"
-              alt="jujutsu-kaisen"
-              class="anime-img"
-            />
-            <h5>Jujutsu Kaisen</h5>
-          </th>
-          <th>
-            <img src="images/anime/bleach.jpg" alt="bleach" class="anime-img" />
-            <h5>Bleach</h5>
-          </th>
-        </tr>
-        <tr>
-          <th>
-            <img
-              src="images/anime/black clower.jpg"
-              alt="black-clower"
-              class="anime-img"
-            />
-            <h5>Black Clower</h5>
-          </th>
-          <th>
-            <img src="images/anime/naruto.jpg" alt="naruto" class="anime-img" />
-            <h5>Naruto</h5>
-          </th>
-          <th>
-            <img
-              src="images/anime/demon slayer.png"
-              alt="demon-slayer"
-              class="anime-img"
-            />
-            <h5>Demon Slayer</h5>
-          </th>
-        </tr>
-      </table>
-    </section>
+    <!-- begin: anime -->
+    <div class="container">
+      <section class="anime-page">
+        <div class="anime-text">
+          <h2 class="at-header">Anime list</h2>
+        </div>
+        <div class="anime-table">
+          <!-- first anime item -->
+          <div class="anime-item">
+            <div class="ai-img">
+              <img src="images/anime/one piece.jpg" alt="one-piece" />
+            </div>
+            <div class="ai-detail">
+              <h3 class="ai-name">One Pice</h3>
+              <div class="ai-info">
+                <span class="ai-info-item">TV</span>
+                <span class="dot"></span>
+                <span class="ai-info-duration">24m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- second anime item -->
+          <div class="anime-item">
+            <div class="ai-img">
+              <img src="images/anime/naruto.jpg" alt="naruto" />
+            </div>
+            <div class="ai-detail">
+              <h3 class="ai-name">Naruto: Shippuden</h3>
+              <div class="ai-info">
+                <span class="ai-info-item">TV</span>
+                <span class="dot"></span>
+                <span class="ai-info-duration">23m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- third anime item -->
+          <div class="anime-item">
+            <div class="ai-img">
+              <img src="images/anime/jujutsu kaisen.png" alt="jujutsu-kaisen" />
+            </div>
+            <div class="ai-detail">
+              <h3 class="ai-name">Jujutsu Kaisen</h3>
+              <div class="ai-info">
+                <span class="ai-info-item">TV</span>
+                <span class="dot"></span>
+                <span class="ai-info-duration">24m</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- fourth anime item -->
+          <div class="anime-item">
+            <div class="ai-img">
+              <img src="images/anime/demon slayer.png" alt="demon-slayer" />
+            </div>
+            <div class="ai-detail">
+              <h3 class="ai-name">Demon Slayer</h3>
+              <div class="ai-info">
+                <span class="ai-info-item">TV</span>
+                <span class="dot"></span>
+                <span class="ai-info-duration">24m</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
