@@ -289,7 +289,9 @@ li {
   .search-bar {
     width: 35%;
     height: 4.4vh;
-    width: 25%;
+    width: 24%;
+    margin-bottom: 7px;
+    border: 2px solid black;
   }
 
   .search-bar input {
@@ -332,6 +334,19 @@ li {
   #login-btn {
     font-size: 3.5vw;
     padding: 0.8vh 2.8vw;
-    margin-right: 0vw;
+    margin-bottom: 7px;
+  }
+
+  .modal-content {
+    margin-top: 10em;
+  }
+
+  .login-content,
+  .register-content {
+    width: 270px;
+  }
+
+  .modal-login-icon {
+    display: none;
   }
 }

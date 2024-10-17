@@ -67,16 +67,25 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   const scrollPosition = window.scrollY;
+  const currentPage = window.location.pathname;
 
-  if (scrollPosition > 50) {
-    // header background semi-transparent when scrolled
-    header.style.backgroundColor = "rgba(112, 140, 105, 0.9)";
-    header.style.backdropFilter = "blur(5px)";
-    header.style.webkitBackdropFilter = "blur(5px)";
+  if (
+    currentPage === "/" ||
+    currentPage.includes("index.html") ||
+    currentPage.includes(" ")
+  ) {
+    document.querySelector("header").style.backgroundColor = "transparent";
   } else {
-    // fully opaque at the top of the page
-    header.style.backgroundColor = "rgba(112, 140, 105, 1)";
-    header.style.backdropFilter = "none";
-    header.style.webkitBackdropFilter = "none";
+    if (scrollPosition > 50) {
+      // header background semi-transparent when scrolled
+      header.style.backgroundColor = "rgba(112, 140, 105, 0.9)";
+      header.style.backdropFilter = "blur(5px)";
+      header.style.webkitBackdropFilter = "blur(5px)";
+    } else {
+      // fully opaque at the top of the page
+      header.style.backgroundColor = "rgba(112, 140, 105, 1)";
+      header.style.backdropFilter = "none";
+      header.style.webkitBackdropFilter = "none";
+    }
   }
 });
