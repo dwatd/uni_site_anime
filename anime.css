@@ -1,5 +1,9 @@
 #header-placeholder {
-  transition: background-color 0.8s ease-in-out;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 body {
@@ -12,13 +16,24 @@ body {
   margin: 0;
 }
 
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+.main-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  /*background-color: brown;*/
+  margin-top: 80px;
+}
+
+.anime-container,
+.sidebar-container {
+  margin-top: 30px;
+}
+
+/* anime list */
+.anime-container {
+  width: 75%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 115px;
 }
 
 .anime-page {
@@ -42,7 +57,7 @@ body {
   justify-content: space-between;
 }
 
-.at-header {
+.header {
   font-size: 22px;
   line-height: 1.3;
   font-weight: 600;
@@ -117,4 +132,20 @@ body {
   height: 4px;
   background-color: #000000;
   border-radius: 50%;
+}
+
+/* top sidebar */
+
+.sidebar-container {
+  width: 25%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+}
+
+.sidebar-text {
+  margin-bottom: 16px;
+}
+
+.sidebar-table {
 }

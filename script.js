@@ -69,12 +69,12 @@ window.addEventListener("scroll", function () {
   const scrollPosition = window.scrollY;
 
   if (scrollPosition > 50) {
-    // Make the header background semi-transparent when scrolled
-    header.style.backgroundColor = "rgba(112, 140, 105, 0.9)"; // Change the 0.5 to adjust the transparency level
+    // header background semi-transparent when scrolled
+    header.style.backgroundColor = "rgba(112, 140, 105, 0.9)";
     header.style.backdropFilter = "blur(5px)";
     header.style.webkitBackdropFilter = "blur(5px)";
   } else {
-    // Fully opaque at the top of the page
+    // fully opaque at the top of the page
     header.style.backgroundColor = "rgba(112, 140, 105, 1)";
     header.style.backdropFilter = "none";
     header.style.webkitBackdropFilter = "none";
