@@ -184,11 +184,19 @@ body {
 }
 
 .sa-number span {
-  border-bottom: 3px solid #708c69;
   padding-bottom: 6px;
-  color: #000000;
   font-weight: 600;
   font-size: 20px;
+}
+
+.with-border {
+  border-bottom: 3px solid #708c69;
+  color: #000000;
+}
+
+.no-border {
+  border-bottom: none;
+  color: #0000009c;
 }
 
 /*top anime img*/
