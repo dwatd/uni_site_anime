@@ -19,7 +19,7 @@ body {
 .main-wrapper {
   display: flex;
   flex-direction: row;
-  margin: 15px;
+  margin: 15px 15px 0px;
   /*background-color: brown;*/
   margin-top: 80px;
 }
@@ -29,6 +29,10 @@ body {
   margin-top: 20px;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
 /* anime list */
 .anime-container {
   width: 75%;
@@ -240,6 +244,26 @@ body {
 
 .sa-info {
   font-size: 14px;
+}
+
+/* begin: footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 45px;
+  background-color: #708c69;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-info p {
+  color: white;
+  font-weight: bold;
+  margin-right: 30px;
 }
 
 /* Media Queries for Responsiveness */
