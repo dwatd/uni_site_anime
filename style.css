@@ -277,7 +277,51 @@ li {
   filter: blur(4px);
 }
 
-@media screen and (max-width: 768px) {
+/* tablet size */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .menu {
+    margin-left: 0vw;
+  }
+
+  .search-bar {
+    width: 15%;
+  }
+
+  .search-bar input {
+    padding-right: 0px;
+    width: 20px;
+    font-size: 2vh;
+  }
+
+  ul li {
+    font-size: 2.1vw;
+    padding-left: 0px;
+  }
+
+  .li_anime_item {
+    padding-left: 0px;
+  }
+
+  #login-btn {
+    font-size: 1.5vw;
+    padding: 1.3vh 1.5vw;
+  }
+
+  .modal-login-icon {
+    display: none;
+  }
+
+  .idea-text h1 {
+    font-size: 5vw;
+  }
+
+  .idea-text p {
+    font-size: 2.5vw;
+  }
+}
+
+/* phone size*/
+@media screen and (max-width: 767px) {
   .menu {
     margin-left: 0vw;
   }
@@ -295,8 +339,9 @@ li {
   }
 
   .search-bar input {
-    padding: 0.7vh 3vw;
-    font-size: 1.9vh;
+    padding-right: 0px;
+    width: 20px;
+    font-size: 2vh;
   }
 
   .logo img {

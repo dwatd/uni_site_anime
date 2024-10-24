@@ -1,1 +1,25 @@
+#header-placeholder {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 
+body {
+  box-sizing: border-box;
+  font-family: Poppins, Arial;
+  line-height: 1.5em;
+  text-align: left;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+.main-wrapper {
+  background-image: url("images/One_Piece_wiki/header1.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  margin-top: 77px;
+}
