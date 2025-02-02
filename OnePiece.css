@@ -1,25 +1,111 @@
-#header-placeholder {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
-
-body {
+* {
   box-sizing: border-box;
-  font-family: Poppins, Arial;
-  line-height: 1.5em;
-  text-align: left;
-  font-weight: 300;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-.main-wrapper {
-  background-image: url("images/One_Piece_wiki/header1.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 80vh;
-  margin-top: 77px;
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  height: 9vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0vh 3vh;
+}
+
+/* header */
+.inline {
+  display: inline;
+}
+
+.arrows {
+  height: 20px;
+  width: auto;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-content {
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: row;
+  height: 92vh;
+}
+
+/* small box - main info */
+.smaller-box {
+  background-color: #708c69;
+  display: flex;
+  flex-direction: column;
+  flex: 21%;
+  padding: 30px;
+}
+
+.mi-img {
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.mi-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mi-text {
+  border: 1px solid rgb(81, 80, 80);
+  margin-top: 10px;
+  padding-left: 6px;
+}
+
+.mi-descr-ul {
+  list-style: none;
+}
+
+.mi-descr-ul li {
+  margin-bottom: 4px;
+}
+
+.mi-descr-ul li span {
+  color: #ab0810;
+}
+
+/* smaller boxes */
+.bigger-box {
+  display: flex;
+  flex-direction: row;
+  flex: 79%;
+}
+
+.info-first,
+.info-second {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-first {
+  background-color: orange;
+}
+.info-second {
+  background-color: orangered;
 }
